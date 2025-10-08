@@ -21,7 +21,7 @@ Responsive typography and layout to ensure readability on all devices.
 
 Content: Included the core page elements:
 
-A grand header (<h1>Attack on Titan</h1>).
+A grand header (Attack on Titan).
 
 A core plot summary overlaid on the hero image.
 
