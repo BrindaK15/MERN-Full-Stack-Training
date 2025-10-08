@@ -1,103 +1,111 @@
-import Image from "next/image";
+import Image from 'next/image';
 
-export default function Home() {
+// Custom colors for AOT theme (using Tailwind arbitrary values if not configured)
+const AOT_RED = 'text-[#A00000]'; 
+const AOT_YELLOW = 'text-[#FFD700]'; 
+
+export default function AoTTributePage() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    // Background: Dark, subtle vertical gradient
+    <main className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-950 to-black text-white p-8">
+      
+      {/* Header with Dramatic Typography (Remains above the image) */}
+      <header className="text-center mb-16 pt-8">
+        <h1 className={`text-7xl md:text-8xl font-black ${AOT_RED} tracking-wider uppercase drop-shadow-lg`}>
+          Attack on Titan
+        </h1>
+        <p className={`mt-4 text-2xl font-light text-gray-300 border-b border-yellow-400/50 pb-2 inline-block`}>
+          For the sake of humanity!
+        </p>
+      </header>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+      {/* Hero Image Section with Content Overlay - FULL WIDTH AND MASSIVE */}
+      <section className="flex justify-center mb-16 px-0">
+        {/* Container: Taller height (90vh) and full width */}
+        <div className="relative w-full min-h-[600px] lg:min-h-[90vh] border-y-4 border-red-600 shadow-[0_0_50px_rgba(255,0,0,0.5)] overflow-hidden group">
+            
+            {/* The Main Image - uses fill to cover the entire tall container */}
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+                src="/images/aot.jpg" 
+                alt="Attack on Titan Key Visual"
+                fill 
+                className="object-cover transform group-hover:scale-105 transition-transform duration-500 ease-in-out"
+                priority
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+            {/* Subtle Gradient Overlay for Text Readability - made slightly stronger */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent pointer-events-none"></div>
+
+            {/* Content Overlay (Plot Summary & Character List) - CENTERED */}
+            <div className="absolute inset-0 p-8 flex flex-col items-center justify-center text-white space-y-12">
+              
+              {/* Added a centered H2 for the Plot summary title */}
+              <h2 className={`text-5xl font-extrabold  tracking-widest text-center border-b-4 border-yellow-400 pb-3 drop-shadow-lg`}>
+                THE BATTLE FOR HUMANITY
+              </h2>
+
+         
+              <div className="max-w-4xl p-6 rounded-lg text-center">
+                
+                <p className="text-xl md:text-2xl font-medium leading-relaxed text-gray-200 drop-shadow-xl">
+                  The world of Attack on Titan centers around the remnants of humanity 
+                  living within three enormous, concentric walls to protect themselves 
+                  from gigantic, man-eating humanoid creatures known as Titans. The story primarily follows <span className="text-red-400 font-extrabold">Eren Yeager</span>, who 
+                  vows to exterminate the Titans after a Colossal Titan breaches the outermost 
+                  wall.
+                </p>
+              </div>
+
+              
+              <div className="p-6 rounded-lg text-center">
+                <h2 className={`text-4xl font-bold mb-6 ${AOT_RED} border-b-2 border-red-600/50 pb-2 drop-shadow-md`}>
+                  Survey Corps Elite
+                </h2>
+                
+                {/* Changed to flex row to center the list horizontally */}
+                <ul className="flex flex-wrap justify-center gap-x-8 gap-y-4 text-lg text-gray-200">
+                  
+                  <li className="flex flex-col items-center space-y-1">
+                      <Image src="/images/eren_icon.jpg" alt="Eren Yeager" width={64} height={64} className="rounded-full border-4 border-red-500 object-cover" />
+                      <span className="font-bold text-white-400">Eren Yeager</span>
+                  </li>
+
+                 
+                  <li className="flex flex-col items-center space-y-1">
+                      <Image src="/images/mikasa_icon.jpg" alt="Mikasa Ackerman" width={64} height={64} className="rounded-full border-4 border-gray-400 object-cover" />
+                      <span>Mikasa Ackerman</span>
+                  </li>
+
+          
+                  <li className="flex flex-col items-center space-y-1">
+                      <Image src="/images/armin_icon.jpg" alt="Armin Arlert" width={64} height={64} className="rounded-full border-4 border-blue-400 object-cover" />
+                      <span>Armin Arlert</span>
+                  </li>
+
+                 
+                  <li className="flex flex-col items-center space-y-1">
+                      <Image src="/images/levi_icon.jpg" alt="Levi Ackerman" width={64} height={64} className="rounded-full border-4 border-purple-400 object-cover" />
+                      <span>Levi Ackerman</span>
+                  </li>
+
+                  <li className="flex flex-col items-center space-y-1">
+                      <Image src="/images/erwin_icon.jpg" alt="Erwin Smith" width={64} height={64} className="rounded-full border-4 border-orange-400 object-cover" />
+                      <span>Erwin Smith</span>
+                  </li>
+                </ul>
+                
+              </div> 
+
+            </div>
+        </div> 
+      </section>
+
+     
+      <div className="max-w-4xl mx-auto mt-16 text-center">
+        <p className="text-gray-400 text-lg">
+          Explore the world of Attack on Titan and join the Survey Corps!
+        </p>
+      </div>
+      
+    </main>
   );
 }
