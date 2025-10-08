@@ -87,7 +87,6 @@ export default function AoTTributePage() {
                       <span>Levi Ackerman</span>
                   </li>
 
-                  
                   <li className="flex flex-col items-center space-y-1">
                       <Image src="/images/erwin_icon.jpg" alt="Erwin Smith" width={64} height={64} className="rounded-full border-4 border-orange-400 object-cover" />
                       <span>Erwin Smith</span>
