@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+### Attack on Titan Next.js Project 
 
-## Getting Started
+This repository documents the completion of a full-stack front-end development project built with Next.js and focused on advanced React, TypeScript, and Tailwind CSS concepts. The project theme is a tribute to the anime/manga Attack on Titan.
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Step 1: The Digital Canvas Summary
+This first step established the foundation of the project by creating the primary visual asset: a dramatic, full-page tribute to Attack on Titan.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Key Achievements
+Next.js Page Structure: Created the main component in app/aot-tribute-page/page.tsx using modern JSX syntax.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Next.js Image Optimization: Used the next/image component for optimal image loading and performance, specifically employing the fill property for the hero section.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Dramatic Styling: Applied extensive Tailwind CSS to achieve a dark, high-contrast aesthetic:
 
-## Learn More
+Custom color definitions (AOT_RED, AOT_YELLOW).
 
-To learn more about Next.js, take a look at the following resources:
+Full-height hero section with image overlay and subtle hover effects (group-hover:scale-105).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Responsive typography and layout to ensure readability on all devices.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Content: Included the core page elements:
 
-## Deploy on Vercel
+A grand header (<h1>Attack on Titan</h1>).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+A core plot summary overlaid on the hero image.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+A visual character list of the Survey Corps Elite with small, stylized icons.
+
+
+### Tech Stack Used in Step 1
+
+Framework: Next.js (App Router)
+
+Styling: Tailwind CSS
+
+Language: React / JSX
+
+
+### Getting Started: Running the Project
+
+1. Install Next.js
+
+    npx create-next-app@latest
+
+2. Run the development Server
+
+    npm run dev
+

@@ -26,7 +26,6 @@ export default function AoTTributePage() {
             
             {/* The Main Image - uses fill to cover the entire tall container */}
             <Image
-                // NOTE: Switched back to aot_image.jpg as per previous context
                 src="/images/aot.jpg" 
                 alt="Attack on Titan Key Visual"
                 fill 
@@ -44,8 +43,7 @@ export default function AoTTributePage() {
                 THE BATTLE FOR HUMANITY
               </h2>
 
-              {/* Plot Summary - TRANSPARENT and Center-Aligned */}
-              {/* Restricted max-width for better readability in the center */}
+         
               <div className="max-w-4xl p-6 rounded-lg text-center">
                 
                 <p className="text-xl md:text-2xl font-medium leading-relaxed text-gray-200 drop-shadow-xl">
@@ -57,7 +55,7 @@ export default function AoTTributePage() {
                 </p>
               </div>
 
-              {/* Character List - TRANSPARENT and Centered */}
+              
               <div className="p-6 rounded-lg text-center">
                 <h2 className={`text-4xl font-bold mb-6 ${AOT_RED} border-b-2 border-red-600/50 pb-2 drop-shadow-md`}>
                   Survey Corps Elite
@@ -65,44 +63,44 @@ export default function AoTTributePage() {
                 
                 {/* Changed to flex row to center the list horizontally */}
                 <ul className="flex flex-wrap justify-center gap-x-8 gap-y-4 text-lg text-gray-200">
-                  {/* Character 1: Eren Yeager */}
+                  
                   <li className="flex flex-col items-center space-y-1">
                       <Image src="/images/eren_icon.jpg" alt="Eren Yeager" width={64} height={64} className="rounded-full border-4 border-red-500 object-cover" />
                       <span className="font-bold text-white-400">Eren Yeager</span>
                   </li>
 
-                  {/* Character 2: Mikasa Ackerman */}
+                 
                   <li className="flex flex-col items-center space-y-1">
                       <Image src="/images/mikasa_icon.jpg" alt="Mikasa Ackerman" width={64} height={64} className="rounded-full border-4 border-gray-400 object-cover" />
                       <span>Mikasa Ackerman</span>
                   </li>
 
-                  {/* Character 3: Armin Arlert */}
+          
                   <li className="flex flex-col items-center space-y-1">
                       <Image src="/images/armin_icon.jpg" alt="Armin Arlert" width={64} height={64} className="rounded-full border-4 border-blue-400 object-cover" />
                       <span>Armin Arlert</span>
                   </li>
 
-                  {/* Character 4: Levi Ackerman */}
+                 
                   <li className="flex flex-col items-center space-y-1">
                       <Image src="/images/levi_icon.jpg" alt="Levi Ackerman" width={64} height={64} className="rounded-full border-4 border-purple-400 object-cover" />
                       <span>Levi Ackerman</span>
                   </li>
 
-                  {/* Character 5: Erwin Smith */}
+                  
                   <li className="flex flex-col items-center space-y-1">
                       <Image src="/images/erwin_icon.jpg" alt="Erwin Smith" width={64} height={64} className="rounded-full border-4 border-orange-400 object-cover" />
                       <span>Erwin Smith</span>
                   </li>
                 </ul>
                 
-              </div> {/* End Character List */}
+              </div> 
 
-            </div> {/* End Content Overlay */}
-        </div> {/* End Hero Image Container */}
+            </div>
+        </div> 
       </section>
 
-      {/* Optional: Other sections below the main image area */}
+     
       <div className="max-w-4xl mx-auto mt-16 text-center">
         <p className="text-gray-400 text-lg">
           Explore the world of Attack on Titan and join the Survey Corps!
