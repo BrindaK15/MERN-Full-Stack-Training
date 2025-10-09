@@ -3,15 +3,15 @@
 This repository documents the completion of a full-stack front-end development project built with Next.js and focused on advanced React, TypeScript, and Tailwind CSS concepts. The project theme is a tribute to the anime/manga Attack on Titan.
 
 
-### Step 1: The Digital Canvas Summary
+#### Step 1: The Digital Canvas Summary
 This first step established the foundation of the project by creating the primary visual asset: a dramatic, full-page tribute to Attack on Titan.
 
-### Key Achievements
+## Key Achievements
 Next.js Page Structure: Created the main component in app/aot-tribute-page/page.tsx using modern JSX syntax.
 
 Next.js Image Optimization: Used the next/image component for optimal image loading and performance, specifically employing the fill property for the hero section.
 
-### Dramatic Styling: Applied extensive Tailwind CSS to achieve a dark, high-contrast aesthetic:
+## Dramatic Styling: Applied extensive Tailwind CSS to achieve a dark, high-contrast aesthetic:
 
 Custom color definitions (AOT_RED, AOT_YELLOW).
 
@@ -28,6 +28,7 @@ A core plot summary overlaid on the hero image.
 A visual character list of the Survey Corps Elite with small, stylized icons.
 
 
+
 ### Tech Stack Used in Step 1
 
 Framework: Next.js (App Router)
@@ -35,6 +36,10 @@ Framework: Next.js (App Router)
 Styling: Tailwind CSS
 
 Language: React / JSX
+
+#### Step 2: TypeScript Fundamentals
+
+Completed Step 2 by defining and exporting the CharacterProps and QuizQuestion TypeScript interfaces in src/types.ts, thereby establishing essential static type contracts for the application's core data.
 
 
 ### Getting Started: Running the Project
