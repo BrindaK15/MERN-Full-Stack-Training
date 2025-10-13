@@ -1,8 +1,10 @@
 /* Defines the structure for character data */
 export interface CharacterProps {
+    id:number,
     name: string;
     quote: string;
     image: string;
+    borderStyle: string;
 }
 
 /* Defines the structure for a single question in the LIC Quiz */
@@ -11,3 +13,4 @@ export interface QuizQuestion {
     options: string[];
     answer: string;
 }
+
