@@ -41,6 +41,14 @@ Language: React / JSX
 
 Completed Step 2 by defining and exporting the CharacterProps and QuizQuestion TypeScript interfaces in src/types.ts, thereby establishing essential static type contracts for the application's core data.
 
+#### Step 3: Utility-First Styling(Tailwind CSS in Next.js)
+
+1. Successfully styled the entire page exclusively using Tailwind CSS utility classes.
+2. Implemented full responsive design using breakpoints(sm:,md:,lg:) to ensure optimal viewing on all device sizes.
+3. Created a visually dramatic and themed aesthetic featuring a dark color palette and high-contrast elements.
+4. Designed a dynamic, full-screen hero section with custom energetic shadows and a hover effect.
+
+
 
 ### Getting Started: Running the Project
 
