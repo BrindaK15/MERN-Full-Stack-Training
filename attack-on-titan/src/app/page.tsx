@@ -2,6 +2,7 @@ import Image from 'next/image';
 import {AOT_CHARACTERS} from '../types';
 import Header from './components/Header';
 import ImageCard from './components/ImageCard';
+import CharacterList from './components/CharacterList';
 
 
 
@@ -33,6 +34,13 @@ export default function AoTTributePage() {
             title={image_title}
             description={image_description}
         />
+
+        <section className='flex justify-center mb-16 px-0' >
+          <CharacterList
+              characters={AOT_CHARACTERS}
+              title="Survey Corps Elite"
+          />
+        </section>
 
         
 

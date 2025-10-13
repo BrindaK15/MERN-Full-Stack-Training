@@ -12,7 +12,7 @@ const ImageCard: React.FC<ImageCardProps> = ({src,alt,title,description})=> {
     return (
         <section className="flex justify-center mb-16 px-0">
             <div  className="relative w-full min-h-[500px] h-[90vh] 
-                            border-4 border-double border-gray-700 ring-4 ring-red-500/50 
+                            
                             shadow-[0_0_80px_rgba(160,0,0,0.8),_inset_0_0_20px_rgba(100,0,0,0.9)] 
                             overflow-hidden rounded-lg group">
                 <Image
