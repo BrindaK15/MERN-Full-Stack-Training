@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import {AOT_CHARACTERS} from '../types';
 import Header from './components/Header';
 import ImageCard from './components/ImageCard';
