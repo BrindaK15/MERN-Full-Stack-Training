@@ -55,7 +55,7 @@ Implemented a dedicated components folder structure.
 
 Type Safety Implemented: Defined and applied the CharacterProps interface (from types.ts) to all related components, ensuring robust, type-safe props.
 
-The page is now assembled using: <Header />, <ImageCard />, and <CharacterList />.
+The page is now assembled using: Header, ImageCard, and CharacterList.
 
 Improved the look of the character list using a responsive grid layout with visually appealing Character components.
 
