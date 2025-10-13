@@ -41,9 +41,6 @@ export default function AoTTributePage() {
               title="Survey Corps Elite"
           />
         </section>
-
-        
-
     </main>
   );
 }
