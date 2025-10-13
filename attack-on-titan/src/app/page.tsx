@@ -1,7 +1,10 @@
 import Image from 'next/image';
+import {AOT_CHARACTERS} from '../types';
+import Header from './components/Header';
 
 
- 
+const AOT_RED_CLASS='text-red-800'
+
 
 export default function AoTTributePage() {
   return (
@@ -9,14 +12,12 @@ export default function AoTTributePage() {
     <main className="min-h-screen  bg-gradient-to-b from-slate-950 via-gray-900 to-black text-white p-4 md:p-8 ">
       
       {/* Header with Dramatic Typography (Remains above the image) */}
-      <header className="text-center mb-12 pt-4">
-        <h1 className={`text-6xl sm:text-7xl lg:text-8xl font-black text-red-800  uppercase drop-shadow-2xl  `}>
-          Attack on Titan
-        </h1>
-        <p className={`mt-3 text-xl md:text-2xl font-light text-gray-400 border-b border-yellow-400/70 pb-2 inline-block`}>
-          For the sake of humanity!
-        </p>
-      </header>
+        <Header
+            title="Attack On Titan"
+            subtitle='For the sake of humanity!'
+            aotRedClass={AOT_RED_CLASS}
+
+        />
 
       {/* Hero Image Section with Content Overlay - FULL WIDTH AND MASSIVE */}
       <section className="flex justify-center mb-16 px-0">
