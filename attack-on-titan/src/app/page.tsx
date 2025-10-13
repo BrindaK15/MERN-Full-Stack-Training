@@ -4,6 +4,7 @@ import Header from './components/Header';
 import ImageCard from './components/ImageCard';
 
 
+
 const AOT_RED_CLASS='text-red-800';
 const image_src='/images/aot.jpg';
 const image_alt="Attack on Titan Key Visual";
@@ -32,6 +33,8 @@ export default function AoTTributePage() {
             title={image_title}
             description={image_description}
         />
+
+        
 
     </main>
   );
