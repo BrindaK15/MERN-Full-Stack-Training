@@ -53,10 +53,13 @@ export const AOT_CHARACTERS : CharacterProps[]=[
 
 /* Defines the structure for a single question in the LIC Quiz */
 export interface QuizQuestion {
+    id: number;
     question: string;
     options: string[];
     answer: string;
 }
+
+
 
 
 
