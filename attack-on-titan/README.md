@@ -59,6 +59,16 @@ The page is now assembled using: Header, ImageCard, and CharacterList.
 
 Improved the look of the character list using a responsive grid layout with visually appealing Character components.
 
+## Step 5 : React Hook and Interactivity
+
+This step successfully implemented the interactive LIC_Quiz.tsx component,marked with "use client",demonstrating core React functionality.
+
+State Management: Used useState to track question index, score, and selected answer.
+
+Controlled Flow: Logic ensures manual navigation (scoring and advancing only happen when the "Save & Next" button is clicked) and visual highlighting of the selected answer.
+
+Routing: The quiz is accessible via the new /quiz route.
+
 ### Getting Started: Running the Project
 
 1. Install Next.js
@@ -69,3 +79,6 @@ Improved the look of the character list using a responsive grid layout with visu
 
     npm run dev
 
+### View the Application
+
+Open your browser and navigate to http://localhost:3000
