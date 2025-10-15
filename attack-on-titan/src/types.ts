@@ -94,7 +94,15 @@ export const LIC_QUIZ_QUESTIONS: QuizQuestion[] = [
     }
 ]
 
-
+ export interface Track {
+    title: string;
+    artist: string;
+    albumArtUrl: string;
+    duration: string;
+    currentTime: string;
+    initialProgress: number;
+    audioUrl: string;
+}
 
 
 
