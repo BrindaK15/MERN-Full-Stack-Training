@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Attack on Titan Tribute Project",
+  title: "UI Maestro Project",
   description: "A tribute page built with Next.js and Tailwind CSS ",
 };
 
