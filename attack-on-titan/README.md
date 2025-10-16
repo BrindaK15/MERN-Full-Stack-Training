@@ -69,6 +69,24 @@ Controlled Flow: Logic ensures manual navigation (scoring and advancing only hap
 
 Routing: The quiz is accessible via the new /quiz route.
 
+## Step 6 : The Firebase Studio Workflow
+
+1. I have done MusicPlayer UI desing in Firebase Studio
+2. Created and populated MusicPlayer.tsx in the project
+3. I transformed the static UI into a functional, robust component by:
+
+Adding all the dynamic React/Audio logic.
+
+Fixing the TypeScript error in the skip buttons.
+
+Fixing the duration synchronization and the '0:00' bug.
+
+Fixing the AbortError.
+
+Addressing the missing UI styles.
+
+Fixing the image and audio file loading paths.
+
 ### Getting Started: Running the Project
 
 1. Install Next.js
