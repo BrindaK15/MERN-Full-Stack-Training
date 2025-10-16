@@ -87,6 +87,10 @@ Addressing the missing UI styles.
 
 Fixing the image and audio file loading paths.
 
+## Step 7: Data Fetching in Next.js (Server & Client)
+
+
+
 ### Getting Started: Running the Project
 
 1. Install Next.js
